@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='style.css'>  
+
+    <title>Macadmin Password Picker</title>
+    
+</head>
+<body>
+    <section id='input'>
+        <div>
+        <label for='username'>3ID</label>
+        <input type='text' id='username' placeholder="3BONDJ007">
+        </div>
+        <div>
+        <label for='password'>Password</label>
+        <input type='password' id='password' placeholder=''>
+        </div>
+        <div>
+        <label for='serial'>Serial Number</label>
+        <input type='text' id='serial' placeholder=''>
+        <button id='submit'>Fetch</button>
+        </div>
+    </section>
+    <section id='output'>
+    <h2>Password of the Day:</h2><span id='lastCheckIn'></span>
+    <span id='potdField'>...</span>
+    <span id='siteCode'></span>  <button id='copyToClipboard'>Copy</button>
+    </section>
+    <script src='./renderer.js'></script>
+</body>
+</html>
