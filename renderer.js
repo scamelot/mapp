@@ -56,7 +56,7 @@ function getPotd(serial,username,password) {
     let config = {
         user: username,
         password: password,
-        jamfUrl: 'https://jamf-api.disney.com:8443',
+        jamfUrl: '',
         format: 'json'
     }
     let jamf = new JamfApiClient(config)
