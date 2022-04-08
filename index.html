@@ -16,6 +16,17 @@
     
 </head>
 <body>
+    <section id="moreInfo" class="hidden">
+        <h4>Model</h4><h5 id='model'></h5>
+        <h4>CPU</h4><h5 id='processor'></h5>
+        <h4>Storage</h4><h5 id='storage'></h5>
+        <h4>RAM</h4></h4><h5 id='ram'></h5>
+        <h4>Site</H4><h5 id='siteInfo'></h5>
+        <h4>Filevault</h4><h5 id='fileVaulted'></h5>
+        <!-- <h4>Installed Software</h4><select id='software'><option>----</option></select> -->
+        <button id='back'>Go back</button>
+    </section>
+    <main>
     <section id='input'>
         <div>
         <label for='username'>3ID</label>
@@ -38,7 +49,9 @@
     <span id='lastCheckIn'></span>
     <span id='potdField'>...</span>
     <span id='siteCode'></span>  <button id='copyToClipboard' class='hidden'>Copy</button>
+    <button id='showMoreInfo'>More Info</button>
     </section>
+    </main>
     <script src='./renderer.js'></script>
 </body>
 </html>

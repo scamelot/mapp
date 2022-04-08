@@ -10,6 +10,13 @@ body {
 h1,h2 {
     text-align: center;
 }
+h4 {
+    clear: both;
+}
+h4,h5 {
+    float: left;
+    margin: .1em 2em;
+}
 div {
     margin: 0 10%;
 }

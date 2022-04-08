@@ -29,7 +29,9 @@
   },
   "config": {
     "forge": {
-      "packagerConfig": {}
+      "packagerConfig": {
+        "icon": "mapp.icns"
+      }
     },
     "makers": [
       {
