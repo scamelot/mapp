@@ -118,6 +118,9 @@ const handlePress = function () {
              alert('Try again: 3ID and/or password cannot be blank. \nTip: Daniel Craig is James Bond.')
              return 0
         }
+        else if (serial == '') {
+            alert('Please provide a serial number or host name.')
+        }
         getPotd(serial,username,password)
 }
 
