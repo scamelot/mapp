@@ -3,6 +3,7 @@ const JamfApiClient = require('jamf')
 class Computer {
 
     constructor(blob) {
+        this.blob = blob
         this.name = blob.general.name
         this.site = blob.general.site.name
         this.potd = blob.extension_attributes.find(element => element.id == 1430).value
@@ -40,7 +41,7 @@ class Computer {
 }
 
 
-const gifCount = 15
+const gifCount = 18
 
 let catchPhrases = ['Fetching...',
                     'Cooking up something real nice...',
@@ -56,7 +57,10 @@ let catchPhrases = ['Fetching...',
                     'Uhh.....',
                     'Typing it out for you...',
                     'Judging...',
-                    'Waiting for JAMF...']
+                    'Waiting for JAMF...',
+                    'Constructing additional pylons...',
+                    'Trying to fetch...',
+                    'Using the force...']
 
 
 let history = []

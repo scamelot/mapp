@@ -32,7 +32,7 @@ input {
     color: rgb(41, 41, 41);	
 }
 #loadGIF {
-    width: 200px;
+    max-width: 250px;
     height: 200px;
     margin: 0 0 0 3.5em;
 }
